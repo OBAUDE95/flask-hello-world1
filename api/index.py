@@ -1,6 +1,10 @@
 from flask import Flask, request, jsonify
 import joblib
 import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
+
 
 # Load the trained model
 model = joblib.load("random_forest_model.joblib")
