@@ -53,6 +53,3 @@ def predict():
 def health():
     return jsonify({"status": "API is running"}), 200
 
-if __name__ == "__main__":
-    # Run the Flask app in debug mode for local development
-    app.run(debug=True)
